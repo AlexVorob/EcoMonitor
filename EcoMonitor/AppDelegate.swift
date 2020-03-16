@@ -15,14 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        GMSServices.provideAPIKey("AIzaSyAVUXSoO8NDEI3F5pH_LNV-AlipTcks1Rg")
         
         let window = UIWindow()
         window.rootViewController = MapViewController()
         window.makeKeyAndVisible()
         self.window = window
         
-        GMSServices.provideAPIKey("AIzaSyAVUXSoO8NDEI3F5pH_LNV-AlipTcks1Rg")
-
         return true
     }
 }
