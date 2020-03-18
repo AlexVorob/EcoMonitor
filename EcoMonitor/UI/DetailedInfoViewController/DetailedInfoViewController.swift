@@ -33,5 +33,13 @@ class DetailedInfoViewController: UIViewController, RootViewRepresentable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.rootView?.fill(with: self.aopModel)
+    }
+    
+    // MARK: -
+    // MARK: - @IBActions
+
+    @IBAction func closeButttonTapped(_ sender: UIButton) {
+        self.dismiss(animated: true)
     }
 }

@@ -29,6 +29,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
         self.rootView?.mapView?.settings.myLocationButton = true
         self.loadData()
         self.drawMarkers()
+        self.mapСenteringZooming()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,20 +48,17 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     // MARK: - Private
 
     private func drawMarkers() {
-        let camera = GMSCameraPosition.camera(withLatitude: 48.567022, longitude: 9.715830, zoom: 6.0)
-        
-        self.rootView?.mapView?.camera = camera
-        
         self.aopModels.models.forEach {
             let marker = MapAOPMarker(model: $0)
             marker.map = self.rootView?.mapView
         }
-        let a = CLLocationCoordinate2D(latitude: self.aopModels.models[0].latitude, longitude: self.aopModels.models[0].longitude)
-        let b = CLLocationCoordinate2D(latitude: self.aopModels.models[2].latitude, longitude: self.aopModels.models[2].longitude)
+    }
+    
+    private func mapСenteringZooming() {
+        let centr = CLLocationCoordinate2D(latitude: self.aopModels.models[2].latitude, longitude: self.aopModels.models[2].longitude)
+        let camera = GMSCameraPosition(target: centr, zoom: 10)
         
-        let bounds = GMSCoordinateBounds(coordinate: a, coordinate: b)
-        self.rootView?.mapView?.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 150))
-        self.rootView?.mapView?.animate(toZoom: 10)
+        self.rootView?.mapView?.animate(to: camera)
     }
     
     private func loadData() {

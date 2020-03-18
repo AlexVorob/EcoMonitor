@@ -10,5 +10,14 @@ import UIKit
 
 class DetailedInfoView: UIView {
 
-
+    @IBOutlet var titleLabel: UILabel?
+    @IBOutlet var nitrogenDioxideLabel: UILabel?
+    @IBOutlet var addressLabel: UILabel?
+    
+    
+    func fill(with model: AOPModel) {
+        self.addressLabel?.text = model.adress
+        self.titleLabel?.text = model.description
+        self.nitrogenDioxideLabel?.text = model.nitrogenDioxide.description
+    }
 }
