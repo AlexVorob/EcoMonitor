@@ -1,0 +1,48 @@
+[{
+    "adress": "Vatutina St, 37В",
+    "latitude": 48.012065,
+    "longitude": 33.483589,
+    "nitrogenDioxide": 0.003,
+    "nitrogenOxide": 0.002,
+    "sulfuricAnhydride": 0.0078,
+    "carbonMonoxide": 0.1,
+    "hydrogenSulfide": 0.002,
+    "dust": 0.204,
+    "description": "Daily average"
+},
+{
+    "adress": "Yuriia Kaminskoho St, 3",
+    "latitude": 47.901510,
+    "longitude": 33.386410,
+    "nitrogenDioxide": 0.010,
+    "nitrogenOxide": 0.005,
+    "sulfuricAnhydride": 0.08,
+    "carbonMonoxide": 0.01,
+    "hydrogenSulfide": 0.009,
+    "dust": 0.104,
+    "description": "Daily average"
+},
+{
+    "adress": "Dniprovske shose St, 11",
+    "latitude": 47.911764,
+    "longitude": 33.423260,
+    "nitrogenDioxide": 0.019,
+    "nitrogenOxide": 0.0054,
+    "sulfuricAnhydride": 0.081,
+    "carbonMonoxide": 0.015,
+    "hydrogenSulfide": 0.078,
+    "dust": 0.15,
+    "description": "Daily average"
+},
+{
+    "adress": "Volodymyra Velykogo St, 32",
+    "latitude": 47.941001,
+    "longitude": 33.418134,
+    "nitrogenDioxide": 0.00079,
+    "nitrogenOxide": 0.0054,
+    "sulfuricAnhydride": 0.031,
+    "carbonMonoxide": 0.01505,
+    "hydrogenSulfide": 0.0098,
+    "dust": 0.35,
+    "description": "Daily average"
+}]

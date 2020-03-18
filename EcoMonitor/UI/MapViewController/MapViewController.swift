@@ -17,6 +17,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     // MARK: - Properties
     
     let navigationVC = UINavigationController()
+    var aopModels = AOPModels()
 
     // MARK: -
     // MARK: - UIViewController
@@ -25,6 +26,8 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
         super.viewDidLoad()
 
         self.rootView?.mapView?.delegate = self
+        self.rootView?.mapView?.settings.myLocationButton = true
+        self.loadData()
         self.drawMarkers()
     }
     
@@ -48,26 +51,20 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
         
         self.rootView?.mapView?.camera = camera
         
-        let marker = MapAOPMarker(model: AOPModel())
-        marker.position = CLLocationCoordinate2D(latitude: 48.567022, longitude: 9.715830)
-        marker.appearAnimation = .pop
-        marker.title = "Bad DitzenbachGermany"
-        marker.snippet = "Germany"
-        marker.map = self.rootView?.mapView
+        self.aopModels.models.forEach {
+            let marker = MapAOPMarker(model: $0)
+            marker.map = self.rootView?.mapView
+        }
+        let a = CLLocationCoordinate2D(latitude: self.aopModels.models[0].latitude, longitude: self.aopModels.models[0].longitude)
+        let b = CLLocationCoordinate2D(latitude: self.aopModels.models[2].latitude, longitude: self.aopModels.models[2].longitude)
         
-//        private func showParcelsOnMap() {
-//            removeParcelsFromMap()
-//            parcelsModel.parcels.forEach {
-//                let parcelMarker = ParcelMarker(with: $0, positionType: providerModel.direction)
-//                parcelMarker.map = mapView
-//                parcelsOnMap.append(parcelMarker)
-//            }
-//        }
-//
-//        private func removeParcelsFromMap() {
-//            parcelsOnMap.forEach { $0.map = nil }
-//            parcelsOnMap.removeAll()
-//        }
+        let bounds = GMSCoordinateBounds(coordinate: a, coordinate: b)
+        self.rootView?.mapView?.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 150))
+        self.rootView?.mapView?.animate(toZoom: 10)
+    }
+    
+    private func loadData() {
+        Parser.readJSONFromFile(fileName: "AOPStations", model: self.aopModels)
     }
     
     // MARK: -

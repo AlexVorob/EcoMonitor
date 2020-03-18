@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5803FFF8241BC403001262E9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803FFF7241BC403001262E9 /* RootView.swift */; };
+		585C3C9E2422198400BF7F60 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C3C9D2422198400BF7F60 /* JsonParser.swift */; };
+		585C3CA024221FD900BF7F60 /* AOPStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 585C3C9F24221FD900BF7F60 /* AOPStations.json */; };
+		585C3CA2242220EF00BF7F60 /* JSONAOPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C3CA1242220EF00BF7F60 /* JSONAOPModel.swift */; };
 		58706AE5241B814000371251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58706AE4241B814000371251 /* AppDelegate.swift */; };
 		58706AEE241B814300371251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58706AED241B814300371251 /* Assets.xcassets */; };
 		58706AF1241B814300371251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58706AEF241B814300371251 /* LaunchScreen.storyboard */; };
@@ -25,6 +28,9 @@
 
 /* Begin PBXFileReference section */
 		5803FFF7241BC403001262E9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		585C3C9D2422198400BF7F60 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		585C3C9F24221FD900BF7F60 /* AOPStations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AOPStations.json; sourceTree = "<group>"; };
+		585C3CA1242220EF00BF7F60 /* JSONAOPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAOPModel.swift; sourceTree = "<group>"; };
 		58706AE1241B814000371251 /* EcoMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58706AE4241B814000371251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58706AED241B814300371251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 				5803FFF6241BC3EB001262E9 /* Lib */,
 				58706AF8241B820700371251 /* UI */,
 				58706AED241B814300371251 /* Assets.xcassets */,
+				585C3C9F24221FD900BF7F60 /* AOPStations.json */,
 				58706AEF241B814300371251 /* LaunchScreen.storyboard */,
 				58706AF2241B814300371251 /* Info.plist */,
 			);
@@ -139,6 +146,7 @@
 			children = (
 				5898DB912421149600E28F97 /* AOPModel.swift */,
 				5898DB93242114A400E28F97 /* AOPModels.swift */,
+				585C3CA1242220EF00BF7F60 /* JSONAOPModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				5898DB972421158D00E28F97 /* MapAOPMarker.swift */,
+				585C3C9D2422198400BF7F60 /* JsonParser.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 			files = (
 				58706AF1241B814300371251 /* LaunchScreen.storyboard in Resources */,
 				58706AFC241B823E00371251 /* MapViewController.xib in Resources */,
+				585C3CA024221FD900BF7F60 /* AOPStations.json in Resources */,
 				5898DB8D242112F100E28F97 /* DetailedInfoViewController.xib in Resources */,
 				58706AEE241B814300371251 /* Assets.xcassets in Resources */,
 			);
@@ -285,11 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5898DB8F2421131D00E28F97 /* DetailedInfoView.swift in Sources */,
+				585C3CA2242220EF00BF7F60 /* JSONAOPModel.swift in Sources */,
 				5898DB8C242112F100E28F97 /* DetailedInfoViewController.swift in Sources */,
 				5803FFF8241BC403001262E9 /* RootView.swift in Sources */,
 				58706AE5241B814000371251 /* AppDelegate.swift in Sources */,
 				58706AFE241B826100371251 /* MapView.swift in Sources */,
 				58706AFB241B823E00371251 /* MapViewController.swift in Sources */,
+				585C3C9E2422198400BF7F60 /* JsonParser.swift in Sources */,
 				5898DB94242114A400E28F97 /* AOPModels.swift in Sources */,
 				5898DB982421158D00E28F97 /* MapAOPMarker.swift in Sources */,
 				5898DB922421149600E28F97 /* AOPModel.swift in Sources */,

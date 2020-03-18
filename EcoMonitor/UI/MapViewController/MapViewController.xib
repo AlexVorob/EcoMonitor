@@ -21,25 +21,13 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hM2-06-itM">
-                    <rect key="frame" x="167" y="452.5" width="80" height="35"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="35" id="jNg-ll-DsP"/>
-                        <constraint firstAttribute="width" constant="80" id="nDV-8a-wJA"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="hA4-GC-Ndg" secondAttribute="bottom" id="7NE-Hp-XLa"/>
-                <constraint firstItem="hM2-06-itM" firstAttribute="centerY" secondItem="hA4-GC-Ndg" secondAttribute="centerY" id="Bfd-Wh-4Ul"/>
                 <constraint firstItem="yG0-wA-ykw" firstAttribute="top" secondItem="hA4-GC-Ndg" secondAttribute="top" id="BkQ-X9-fRT"/>
                 <constraint firstAttribute="trailing" secondItem="hA4-GC-Ndg" secondAttribute="trailing" id="DQr-qK-nTU"/>
                 <constraint firstItem="hA4-GC-Ndg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lyd-rJ-Z7f"/>
-                <constraint firstItem="hM2-06-itM" firstAttribute="centerX" secondItem="hA4-GC-Ndg" secondAttribute="centerX" id="vG7-hI-OVG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="yG0-wA-ykw"/>
             <connections>

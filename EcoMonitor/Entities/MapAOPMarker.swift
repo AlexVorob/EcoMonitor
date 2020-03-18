@@ -18,5 +18,6 @@ class MapAOPMarker: GMSMarker {
         
         self.aopModel = model
         self.position = CLLocationCoordinate2D(latitude: model.latitude, longitude: model.longitude)
+        self.appearAnimation = .pop
     }
 }
