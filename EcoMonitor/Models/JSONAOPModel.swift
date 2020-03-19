@@ -12,12 +12,12 @@ struct JSONAOPModel: Decodable {
     
     let latitude: Double
     let longitude: Double
-    let description: String
     let adress: String
     let nitrogenDioxide: Double
     let nitrogenOxide: Double
     let sulfuricAnhydride: Double
     let carbonMonoxide: Double
+    let ammonia: Double
     let hydrogenSulfide: Double
     let dust: Double
 }

@@ -13,25 +13,25 @@ class AOPModel {
     
     var latitude: Double
     var longitude: Double
-    var description: String
     var adress: String
-    var nitrogenDioxide: Double
-    var nitrogenOxide: Double
-    var sulfuricAnhydride: Double
-    var carbonMonoxide: Double
-    var hydrogenSulfide: Double
+    var NO2: Double
+    var NO: Double
+    var SO2: Double
+    var CO: Double
+    var NH3: Double
+    var H2S: Double
     var dust: Double
     
     init(decode: JSONAOPModel) {
         self.adress = decode.adress
         self.latitude = decode.latitude
         self.longitude = decode.longitude
-        self.description = decode.description
-        self.nitrogenDioxide = decode.nitrogenDioxide
-        self.nitrogenOxide = decode.nitrogenOxide
-        self.sulfuricAnhydride = decode.sulfuricAnhydride
-        self.carbonMonoxide = decode.carbonMonoxide
-        self.hydrogenSulfide = decode.hydrogenSulfide
+        self.NO2 = decode.nitrogenDioxide
+        self.NO = decode.nitrogenOxide
+        self.SO2 = decode.sulfuricAnhydride
+        self.CO = decode.carbonMonoxide
+        self.NH3 = decode.ammonia
+        self.H2S = decode.hydrogenSulfide
         self.dust = decode.dust
     }
     
@@ -39,12 +39,12 @@ class AOPModel {
         self.adress = String()
         self.latitude = Double()
         self.longitude = Double()
-        self.description = String()
-        self.nitrogenDioxide = Double()
-        self.nitrogenOxide = Double()
-        self.sulfuricAnhydride = Double()
-        self.carbonMonoxide = Double()
-        self.hydrogenSulfide = Double()
+        self.NO2 = Double()
+        self.NO = Double()
+        self.SO2 = Double()
+        self.CO = Double()
+        self.NH3 = Double()
+        self.H2S = Double()
         self.dust = Double()
     }
 }

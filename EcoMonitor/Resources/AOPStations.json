@@ -1,48 +1,48 @@
 [{
-    "adress": "Vatutina St, 37В",
+    "adress": "вулиця Ватутіна буд. 37В",
     "latitude": 48.012065,
     "longitude": 33.483589,
     "nitrogenDioxide": 0.003,
     "nitrogenOxide": 0.002,
     "sulfuricAnhydride": 0.0078,
     "carbonMonoxide": 0.1,
+    "ammonia": 0.001,
     "hydrogenSulfide": 0.002,
-    "dust": 0.204,
-    "description": "Daily average"
+    "dust": 0.204
 },
 {
-    "adress": "Yuriia Kaminskoho St, 3",
+    "adress": "вулиця Юрія Камінського буд. 3",
     "latitude": 47.901510,
     "longitude": 33.386410,
     "nitrogenDioxide": 0.010,
     "nitrogenOxide": 0.005,
     "sulfuricAnhydride": 0.08,
     "carbonMonoxide": 0.01,
+    "ammonia": 0.003,
     "hydrogenSulfide": 0.009,
-    "dust": 0.104,
-    "description": "Daily average"
+    "dust": 0.104
 },
 {
-    "adress": "Dniprovske shose St, 11",
+    "adress": "вулиця Дніпровське шосе буд. 11",
     "latitude": 47.911764,
     "longitude": 33.423260,
     "nitrogenDioxide": 0.019,
     "nitrogenOxide": 0.0054,
     "sulfuricAnhydride": 0.081,
     "carbonMonoxide": 0.015,
+    "ammonia": 0.004,
     "hydrogenSulfide": 0.078,
-    "dust": 0.15,
-    "description": "Daily average"
+    "dust": 0.15
 },
 {
-    "adress": "Volodymyra Velykogo St, 32",
+    "adress": "вулиця Володимира Великого буд. 32",
     "latitude": 47.941001,
     "longitude": 33.418134,
     "nitrogenDioxide": 0.00079,
     "nitrogenOxide": 0.0054,
     "sulfuricAnhydride": 0.031,
     "carbonMonoxide": 0.01505,
+    "ammonia": 0.005,
     "hydrogenSulfide": 0.0098,
-    "dust": 0.35,
-    "description": "Daily average"
+    "dust": 0.35
 }]

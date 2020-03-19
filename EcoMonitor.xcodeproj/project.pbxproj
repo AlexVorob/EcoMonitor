@@ -105,9 +105,9 @@
 				5803FFF6241BC3EB001262E9 /* Lib */,
 				58706AF8241B820700371251 /* UI */,
 				58706AED241B814300371251 /* Assets.xcassets */,
-				585C3C9F24221FD900BF7F60 /* AOPStations.json */,
 				58706AEF241B814300371251 /* LaunchScreen.storyboard */,
 				58706AF2241B814300371251 /* Info.plist */,
+				58C5C546242357ED00F5B15A /* Resources */,
 			);
 			path = EcoMonitor;
 			sourceTree = "<group>";
@@ -166,6 +166,14 @@
 				58706AE4241B814000371251 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		58C5C546242357ED00F5B15A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				585C3C9F24221FD900BF7F60 /* AOPStations.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		99DE630F05B95437DB3E72FD /* Pods */ = {
