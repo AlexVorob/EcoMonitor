@@ -13,7 +13,6 @@
 		585C3CA2242220EF00BF7F60 /* JSONAOPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C3CA1242220EF00BF7F60 /* JSONAOPModel.swift */; };
 		58706AE5241B814000371251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58706AE4241B814000371251 /* AppDelegate.swift */; };
 		58706AEE241B814300371251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58706AED241B814300371251 /* Assets.xcassets */; };
-		58706AF1241B814300371251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58706AEF241B814300371251 /* LaunchScreen.storyboard */; };
 		58706AFB241B823E00371251 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58706AF9241B823E00371251 /* MapViewController.swift */; };
 		58706AFC241B823E00371251 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58706AFA241B823E00371251 /* MapViewController.xib */; };
 		58706AFE241B826100371251 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58706AFD241B826100371251 /* MapView.swift */; };
@@ -23,6 +22,7 @@
 		5898DB922421149600E28F97 /* AOPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898DB912421149600E28F97 /* AOPModel.swift */; };
 		5898DB94242114A400E28F97 /* AOPModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898DB93242114A400E28F97 /* AOPModels.swift */; };
 		5898DB982421158D00E28F97 /* MapAOPMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898DB972421158D00E28F97 /* MapAOPMarker.swift */; };
+		58B68A972424BC4F007FDC9E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B68A962424BC4F007FDC9E /* Launch Screen.storyboard */; };
 		C161AC349B4829C529493557 /* Pods_EcoMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABE992435ACC4791D838330 /* Pods_EcoMonitor.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,6 @@
 		58706AE1241B814000371251 /* EcoMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58706AE4241B814000371251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58706AED241B814300371251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		58706AF0241B814300371251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58706AF2241B814300371251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58706AF9241B823E00371251 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		58706AFA241B823E00371251 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		5898DB912421149600E28F97 /* AOPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOPModel.swift; sourceTree = "<group>"; };
 		5898DB93242114A400E28F97 /* AOPModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOPModels.swift; sourceTree = "<group>"; };
 		5898DB972421158D00E28F97 /* MapAOPMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAOPMarker.swift; sourceTree = "<group>"; };
+		58B68A962424BC4F007FDC9E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5AA34323546F67D1701F31C0 /* Pods-EcoMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoMonitor.debug.xcconfig"; path = "Target Support Files/Pods-EcoMonitor/Pods-EcoMonitor.debug.xcconfig"; sourceTree = "<group>"; };
 		7FA14FE035C69854451E7780 /* Pods-EcoMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoMonitor.release.xcconfig"; path = "Target Support Files/Pods-EcoMonitor/Pods-EcoMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		BABE992435ACC4791D838330 /* Pods_EcoMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +105,8 @@
 				5803FFF6241BC3EB001262E9 /* Lib */,
 				58706AF8241B820700371251 /* UI */,
 				58706AED241B814300371251 /* Assets.xcassets */,
-				58706AEF241B814300371251 /* LaunchScreen.storyboard */,
 				58706AF2241B814300371251 /* Info.plist */,
+				58B68A962424BC4F007FDC9E /* Launch Screen.storyboard */,
 				58C5C546242357ED00F5B15A /* Resources */,
 			);
 			path = EcoMonitor;
@@ -245,10 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58706AF1241B814300371251 /* LaunchScreen.storyboard in Resources */,
 				58706AFC241B823E00371251 /* MapViewController.xib in Resources */,
 				585C3CA024221FD900BF7F60 /* AOPStations.json in Resources */,
 				5898DB8D242112F100E28F97 /* DetailedInfoViewController.xib in Resources */,
+				58B68A972424BC4F007FDC9E /* Launch Screen.storyboard in Resources */,
 				58706AEE241B814300371251 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,17 +317,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		58706AEF241B814300371251 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58706AF0241B814300371251 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		58706AF3241B814300371251 /* Debug */ = {
@@ -448,7 +437,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AA34323546F67D1701F31C0 /* Pods-EcoMonitor.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJX45K4DMS;
 				INFOPLIST_FILE = EcoMonitor/Info.plist;
@@ -468,7 +456,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7FA14FE035C69854451E7780 /* Pods-EcoMonitor.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJX45K4DMS;
 				INFOPLIST_FILE = EcoMonitor/Info.plist;
