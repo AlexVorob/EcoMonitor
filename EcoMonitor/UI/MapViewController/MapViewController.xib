@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,18 +17,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hA4-GC-Ndg" userLabel="mapView" customClass="GMSMapView">
-                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="hA4-GC-Ndg" secondAttribute="bottom" id="7NE-Hp-XLa"/>
-                <constraint firstItem="yG0-wA-ykw" firstAttribute="top" secondItem="hA4-GC-Ndg" secondAttribute="top" id="BkQ-X9-fRT"/>
+                <constraint firstAttribute="top" secondItem="hA4-GC-Ndg" secondAttribute="top" id="BkQ-X9-fRT"/>
                 <constraint firstAttribute="trailing" secondItem="hA4-GC-Ndg" secondAttribute="trailing" id="DQr-qK-nTU"/>
                 <constraint firstItem="hA4-GC-Ndg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lyd-rJ-Z7f"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="yG0-wA-ykw"/>
+            <nil key="simulatedTopBarMetrics"/>
             <connections>
                 <outlet property="mapView" destination="hA4-GC-Ndg" id="OGF-Ra-mDq"/>
             </connections>
