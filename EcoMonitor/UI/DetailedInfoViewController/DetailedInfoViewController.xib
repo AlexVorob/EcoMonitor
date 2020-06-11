@@ -54,20 +54,20 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHU-DK-cW6" userLabel="dayView">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Средноьдобові (мг/м3): " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-zx-8b7" userLabel="titleLabel">
-                                            <rect key="frame" x="20" y="10" width="374" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Средноьдобові (мг/м3): " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-zx-8b7" userLabel="titleLabel">
+                                            <rect key="frame" x="20" y="5" width="374" height="23"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Діоксид азоту:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZj-FD-nez" userLabel="N02Label">
-                                            <rect key="frame" x="20" y="53" width="299" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Діоксид азоту:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZj-FD-nez" userLabel="N02Label">
+                                            <rect key="frame" x="20" y="48" width="299" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="UJg-VZ-kNR" userLabel="NO2IndicationLabel">
-                                            <rect key="frame" x="334" y="54" width="60" height="18"/>
+                                            <rect key="frame" x="334" y="49" width="60" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="ZU4-PH-y2c"/>
                                             </constraints>
@@ -76,13 +76,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оксид азоту:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDP-g1-2uZ" userLabel="NOLabel">
-                                            <rect key="frame" x="20" y="82.5" width="98.5" height="19.5"/>
+                                            <rect key="frame" x="20" y="77.5" width="98.5" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="dMP-lZ-co5" userLabel="NOIndicationLabel">
-                                            <rect key="frame" x="334" y="83.5" width="60" height="18"/>
+                                            <rect key="frame" x="334" y="78.5" width="60" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="YI2-RB-xaf"/>
                                             </constraints>
@@ -91,13 +91,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сірчаний ангідрид:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-UD-Pgo" userLabel="SO2Label">
-                                            <rect key="frame" x="20" y="111.5" width="145.5" height="19.5"/>
+                                            <rect key="frame" x="20" y="106.5" width="145.5" height="14"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xlT-od-FzC" userLabel="SO2IndicationLabel">
-                                            <rect key="frame" x="334" y="112" width="60" height="18"/>
+                                            <rect key="frame" x="334" y="104.5" width="60" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="iqR-Wa-E9r"/>
                                             </constraints>
@@ -105,14 +105,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оксид вуглецю:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpq-ju-UW7" userLabel="COLabel">
-                                            <rect key="frame" x="20" y="141" width="120" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Оксид вуглецю:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpq-ju-UW7" userLabel="COLabel">
+                                            <rect key="frame" x="20" y="130.5" width="120" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="nqx-Ni-aZ1" userLabel="COIndicationLabel">
-                                            <rect key="frame" x="334" y="141.5" width="60" height="18"/>
+                                            <rect key="frame" x="334" y="131.5" width="60" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="INH-K5-YCL"/>
                                             </constraints>
@@ -120,14 +120,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Аміак:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-Rh-8UL" userLabel="NH3Label">
-                                            <rect key="frame" x="20" y="170.5" width="48" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Аміак:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-Rh-8UL" userLabel="NH3Label">
+                                            <rect key="frame" x="20" y="160" width="48" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="7Uq-1o-WQl" userLabel="NH3IndicationLabel">
-                                            <rect key="frame" x="334" y="171" width="60" height="18"/>
+                                            <rect key="frame" x="334" y="161" width="60" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="f5Q-St-jRe"/>
                                             </constraints>
@@ -135,14 +135,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сірководень:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIP-50-hC8" userLabel="H2SLabel">
-                                            <rect key="frame" x="20" y="200" width="100" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Сірководень:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIP-50-hC8" userLabel="H2SLabel">
+                                            <rect key="frame" x="20" y="189.5" width="100" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sGr-uj-h7l" userLabel="H2SIndicationLabel">
-                                            <rect key="frame" x="334" y="200.5" width="60" height="18"/>
+                                            <rect key="frame" x="334" y="190.5" width="60" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="KMt-un-33b"/>
                                             </constraints>
@@ -151,13 +151,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пил:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9on-nh-Nnb" userLabel="dustLabel">
-                                            <rect key="frame" x="20" y="229.5" width="34.5" height="20"/>
+                                            <rect key="frame" x="20" y="219" width="34.5" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gls-2C-4En" userLabel="dustIndicationLabel">
-                                            <rect key="frame" x="334" y="230.5" width="60" height="18"/>
+                                            <rect key="frame" x="334" y="220" width="60" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="Um7-WW-YaK"/>
                                             </constraints>
@@ -166,10 +166,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZU-YF-r0o" userLabel="thinView">
-                                            <rect key="frame" x="10" y="258.5" width="394" height="1"/>
+                                            <rect key="frame" x="10" y="248" width="394" height="2"/>
                                             <color key="backgroundColor" name="labelColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="1" id="m3b-HT-QcQ"/>
+                                                <constraint firstAttribute="height" constant="2" id="m3b-HT-QcQ"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -190,9 +190,10 @@
                                         <constraint firstItem="UJg-VZ-kNR" firstAttribute="centerY" secondItem="sZj-FD-nez" secondAttribute="centerY" id="HgF-Ln-Ey7"/>
                                         <constraint firstItem="nqx-Ni-aZ1" firstAttribute="centerY" secondItem="mpq-ju-UW7" secondAttribute="centerY" id="I8O-dQ-6NG"/>
                                         <constraint firstItem="9on-nh-Nnb" firstAttribute="top" secondItem="BIP-50-hC8" secondAttribute="bottom" constant="10" id="Kwl-Rj-phF"/>
-                                        <constraint firstItem="bcn-zx-8b7" firstAttribute="top" secondItem="WHU-DK-cW6" secondAttribute="top" constant="10" id="Man-vE-i4u"/>
+                                        <constraint firstItem="bcn-zx-8b7" firstAttribute="top" secondItem="WHU-DK-cW6" secondAttribute="top" constant="5" id="Man-vE-i4u"/>
                                         <constraint firstItem="gls-2C-4En" firstAttribute="centerY" secondItem="9on-nh-Nnb" secondAttribute="centerY" id="Mvr-Yi-Pm2"/>
                                         <constraint firstItem="zXy-UD-Pgo" firstAttribute="top" secondItem="dMP-lZ-co5" secondAttribute="bottom" constant="10" id="Nxh-Yf-rQh"/>
+                                        <constraint firstAttribute="bottom" secondItem="rZU-YF-r0o" secondAttribute="bottom" id="Otc-tR-DuS"/>
                                         <constraint firstAttribute="trailing" secondItem="dMP-lZ-co5" secondAttribute="trailing" constant="20" id="Rgt-pf-UzG"/>
                                         <constraint firstItem="dMP-lZ-co5" firstAttribute="centerY" secondItem="HDP-g1-2uZ" secondAttribute="centerY" id="Tvm-N0-k3h"/>
                                         <constraint firstAttribute="height" constant="250" id="Vxo-4r-AMn"/>
@@ -328,10 +329,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tC6-9s-Ewx" userLabel="thinView">
-                                            <rect key="frame" x="10" y="258.5" width="394" height="1"/>
+                                            <rect key="frame" x="10" y="258.5" width="394" height="2"/>
                                             <color key="backgroundColor" name="labelColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="1" id="tyE-I6-CWS"/>
+                                                <constraint firstAttribute="height" constant="2" id="tyE-I6-CWS"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -430,7 +431,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="headerColor">
-            <color red="0.85642052664974622" green="0.85642052664974622" blue="0.85642052664974622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.88537039974619292" green="0.88537039974619292" blue="0.88537039974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="labelColor">
             <color red="0.65248255076142136" green="0.65248255076142136" blue="0.65248255076142136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
