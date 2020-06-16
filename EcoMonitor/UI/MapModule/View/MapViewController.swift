@@ -16,9 +16,21 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     // MARK: -
     // MARK: - Properties
     
-    let navigationVC = UINavigationController()
-    var aopModels = AOPModels()
+    var viewModel: MapViewModel
+    
+    // MARK: -
+    // MARK: - Initializations
 
+    init(viewModel: MapViewModel) {
+        self.viewModel = viewModel
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: -
     // MARK: - UIViewController
 
@@ -27,7 +39,6 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
 
         self.rootView?.mapView?.delegate = self
         self.rootView?.mapView?.settings.myLocationButton = true
-        self.loadData()
         self.drawMarkers()
         self.mapСenteringZooming()
     }
@@ -48,21 +59,19 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     // MARK: - Private
 
     private func drawMarkers() {
-        self.aopModels.models.forEach {
-            let marker = MapAOPMarker(model: $0)
-            marker.map = self.rootView?.mapView
+        self.viewModel.fetchData {
+            self.viewModel.aopModels.models.forEach {
+                let marker = MapAOPMarker(model: $0)
+                marker.map = self.rootView?.mapView
+            }
         }
     }
     
     private func mapСenteringZooming() {
-        let centr = CLLocationCoordinate2D(latitude: self.aopModels.models[2].latitude, longitude: self.aopModels.models[2].longitude)
+        let centr = CLLocationCoordinate2D(latitude: self.viewModel.aopModels.models[2].latitude, longitude: self.viewModel.aopModels.models[2].longitude)
         let camera = GMSCameraPosition(target: centr, zoom: 10)
         
         self.rootView?.mapView?.animate(to: camera)
-    }
-    
-    private func loadData() {
-        Parser.readJSONFromFile(fileName: "AOPStations", model: self.aopModels)
     }
     
     // MARK: -
@@ -71,8 +80,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         if let aopMarker = marker as? MapAOPMarker {
            
-            let controller = DetailedInfoViewController(model: aopMarker.aopModel)
-            self.present(controller, animated: true)
+            self.viewModel.tapOnMarker(model: aopMarker.aopModel)
         }
         
         return false

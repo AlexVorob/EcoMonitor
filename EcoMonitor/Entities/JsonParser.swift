@@ -9,18 +9,19 @@
 import Foundation
 
 protocol JsonParsable {
-   static func readJSONFromFile(fileName: String, model: AOPModels)
+   static func readJSONFromFile(fileName: String, completion: @escaping ([AOPModel]) -> ())
 }
 
 class Parser: JsonParsable {
     
-    static func readJSONFromFile(fileName: String, model: AOPModels) {
+    static func readJSONFromFile(fileName: String, completion: @escaping ([AOPModel]) -> ()) {
         
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
             guard let data = try? Data(contentsOf: url) else { return }
             
             guard let decode = try? JSONDecoder().decode([JSONAOPModel].self, from: data) else { return }
-            model.models = decode.compactMap { AOPModel(decode: $0) }
+            let models = decode.compactMap { AOPModel(decode: $0) }
+            completion(models)
         }
     }
 }

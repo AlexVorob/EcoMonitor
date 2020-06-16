@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyAVUXSoO8NDEI3F5pH_LNV-AlipTcks1Rg")
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UINavigationController(rootViewController: MapViewController())
+        let viewModel = MapViewModel()
+        window.rootViewController = UINavigationController(rootViewController: MapViewController(viewModel: viewModel))
         window.makeKeyAndVisible()
         self.window = window
         

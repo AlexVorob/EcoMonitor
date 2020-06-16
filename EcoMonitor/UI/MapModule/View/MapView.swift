@@ -12,5 +12,4 @@ import GoogleMaps
 class MapView: UIView {
 
     @IBOutlet var mapView: GMSMapView?
-    
 }

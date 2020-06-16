@@ -23,6 +23,7 @@
 		5898DB94242114A400E28F97 /* AOPModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898DB93242114A400E28F97 /* AOPModels.swift */; };
 		5898DB982421158D00E28F97 /* MapAOPMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898DB972421158D00E28F97 /* MapAOPMarker.swift */; };
 		58B68A972424BC4F007FDC9E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B68A962424BC4F007FDC9E /* Launch Screen.storyboard */; };
+		58C1743B2498FB6C00B95CAB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C1743A2498FB6C00B95CAB /* MapViewModel.swift */; };
 		C161AC349B4829C529493557 /* Pods_EcoMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABE992435ACC4791D838330 /* Pods_EcoMonitor.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		5898DB93242114A400E28F97 /* AOPModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOPModels.swift; sourceTree = "<group>"; };
 		5898DB972421158D00E28F97 /* MapAOPMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAOPMarker.swift; sourceTree = "<group>"; };
 		58B68A962424BC4F007FDC9E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		58C1743A2498FB6C00B95CAB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		5AA34323546F67D1701F31C0 /* Pods-EcoMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoMonitor.debug.xcconfig"; path = "Target Support Files/Pods-EcoMonitor/Pods-EcoMonitor.debug.xcconfig"; sourceTree = "<group>"; };
 		7FA14FE035C69854451E7780 /* Pods-EcoMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoMonitor.release.xcconfig"; path = "Target Support Files/Pods-EcoMonitor/Pods-EcoMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		BABE992435ACC4791D838330 /* Pods_EcoMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,30 +117,30 @@
 		58706AF8241B820700371251 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5898DB892421126B00E28F97 /* DetailedInfoViewController */,
-				5898DB882421125600E28F97 /* MapViewController */,
+				5898DB892421126B00E28F97 /* DetailedInfoModule */,
+				5898DB882421125600E28F97 /* MapModule */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		5898DB882421125600E28F97 /* MapViewController */ = {
+		5898DB882421125600E28F97 /* MapModule */ = {
 			isa = PBXGroup;
 			children = (
-				58706AF9241B823E00371251 /* MapViewController.swift */,
-				58706AFA241B823E00371251 /* MapViewController.xib */,
-				58706AFD241B826100371251 /* MapView.swift */,
+				58C1743C2498FBD300B95CAB /* Model */,
+				58C174382498EEC000B95CAB /* ViewModel */,
+				58C174392498EECB00B95CAB /* View */,
 			);
-			path = MapViewController;
+			path = MapModule;
 			sourceTree = "<group>";
 		};
-		5898DB892421126B00E28F97 /* DetailedInfoViewController */ = {
+		5898DB892421126B00E28F97 /* DetailedInfoModule */ = {
 			isa = PBXGroup;
 			children = (
-				5898DB8A242112F100E28F97 /* DetailedInfoViewController.swift */,
-				5898DB8B242112F100E28F97 /* DetailedInfoViewController.xib */,
-				5898DB8E2421131D00E28F97 /* DetailedInfoView.swift */,
+				58C174372498EA4700B95CAB /* View */,
+				58C174362498EA3C00B95CAB /* Model */,
+				58C174352498EA0F00B95CAB /* ViewModel */,
 			);
-			path = DetailedInfoViewController;
+			path = DetailedInfoModule;
 			sourceTree = "<group>";
 		};
 		5898DB90242113DA00E28F97 /* Models */ = {
@@ -166,6 +168,55 @@
 				58706AE4241B814000371251 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		58C174352498EA0F00B95CAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		58C174362498EA3C00B95CAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58C174372498EA4700B95CAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5898DB8A242112F100E28F97 /* DetailedInfoViewController.swift */,
+				5898DB8B242112F100E28F97 /* DetailedInfoViewController.xib */,
+				5898DB8E2421131D00E28F97 /* DetailedInfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58C174382498EEC000B95CAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				58C1743A2498FB6C00B95CAB /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		58C174392498EECB00B95CAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58706AF9241B823E00371251 /* MapViewController.swift */,
+				58706AFA241B823E00371251 /* MapViewController.xib */,
+				58706AFD241B826100371251 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58C1743C2498FBD300B95CAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		58C5C546242357ED00F5B15A /* Resources */ = {
@@ -313,6 +364,7 @@
 				5898DB94242114A400E28F97 /* AOPModels.swift in Sources */,
 				5898DB982421158D00E28F97 /* MapAOPMarker.swift in Sources */,
 				5898DB922421149600E28F97 /* AOPModel.swift in Sources */,
+				58C1743B2498FB6C00B95CAB /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
