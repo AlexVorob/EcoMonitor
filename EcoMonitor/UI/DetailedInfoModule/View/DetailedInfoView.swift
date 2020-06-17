@@ -19,6 +19,24 @@ class DetailedInfoView: UIView {
     @IBOutlet var H2SLabel: UILabel?
     @IBOutlet var dustLabel: UILabel?
     
+    var viewData: ViewData = .default {
+          didSet {
+            self.setNeedsLayout()
+          }
+      }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        print("X viewData -> ", viewData)
+        switch viewData {
+        case .default:
+            break
+        case .model(let viewData):
+            self.fill(with: viewData)
+        }
+    }
+        
     func fill(with model: AOPModel) {
         self.addressLabel?.text = model.adress
         self.NO2Label?.text = model.NO2.description

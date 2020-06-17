@@ -9,6 +9,12 @@
 import UIKit
 import GoogleMaps
 
+struct Constants {
+    
+    static let mapCenteringLatitude = 47.911764
+    static let mapCenteringlongitud = 33.423260
+}
+
 class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDelegate {
     
     typealias RootView = MapView
@@ -16,7 +22,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     // MARK: -
     // MARK: - Properties
     
-    var viewModel: MapViewModel
+    var viewModel: MapViewModelType
     
     // MARK: -
     // MARK: - Initializations
@@ -60,7 +66,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
 
     private func drawMarkers() {
         self.viewModel.fetchData {
-            self.viewModel.aopModels.models.forEach {
+            $0.models.forEach {
                 let marker = MapAOPMarker(model: $0)
                 marker.map = self.rootView?.mapView
             }
@@ -68,7 +74,8 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     }
     
     private func mapСenteringZooming() {
-        let centr = CLLocationCoordinate2D(latitude: self.viewModel.aopModels.models[2].latitude, longitude: self.viewModel.aopModels.models[2].longitude)
+        let centr = CLLocationCoordinate2D(latitude: Constants.mapCenteringLatitude,
+                                           longitude: Constants.mapCenteringlongitud)
         let camera = GMSCameraPosition(target: centr, zoom: 10)
         
         self.rootView?.mapView?.animate(to: camera)

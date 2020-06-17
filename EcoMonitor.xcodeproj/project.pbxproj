@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5803FFF8241BC403001262E9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803FFF7241BC403001262E9 /* RootView.swift */; };
+		5834CFF6249A00C80028A194 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5834CFF5249A00C80028A194 /* AppCoordinator.swift */; };
+		5834CFF8249A092A0028A194 /* DetailedInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5834CFF7249A092A0028A194 /* DetailedInfoViewModel.swift */; };
+		5834CFFA249A19770028A194 /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5834CFF9249A19770028A194 /* ViewData.swift */; };
 		585C3C9E2422198400BF7F60 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C3C9D2422198400BF7F60 /* JsonParser.swift */; };
 		585C3CA024221FD900BF7F60 /* AOPStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 585C3C9F24221FD900BF7F60 /* AOPStations.json */; };
 		585C3CA2242220EF00BF7F60 /* JSONAOPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C3CA1242220EF00BF7F60 /* JSONAOPModel.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		5803FFF7241BC403001262E9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		5834CFF5249A00C80028A194 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5834CFF7249A092A0028A194 /* DetailedInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInfoViewModel.swift; sourceTree = "<group>"; };
+		5834CFF9249A19770028A194 /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
 		585C3C9D2422198400BF7F60 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		585C3C9F24221FD900BF7F60 /* AOPStations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AOPStations.json; sourceTree = "<group>"; };
 		585C3CA1242220EF00BF7F60 /* JSONAOPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAOPModel.swift; sourceTree = "<group>"; };
@@ -80,6 +86,14 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
+		5834CFF4249A00900028A194 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5834CFF5249A00C80028A194 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		58706AD8241B814000371251 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +117,7 @@
 			children = (
 				5898DB962421155E00E28F97 /* AppDelegate */,
 				5898DB952421150C00E28F97 /* Entities */,
+				5834CFF4249A00900028A194 /* Coordinators */,
 				5898DB90242113DA00E28F97 /* Models */,
 				5803FFF6241BC3EB001262E9 /* Lib */,
 				58706AF8241B820700371251 /* UI */,
@@ -136,9 +151,9 @@
 		5898DB892421126B00E28F97 /* DetailedInfoModule */ = {
 			isa = PBXGroup;
 			children = (
+				58C174352498EA0F00B95CAB /* ViewModel */,
 				58C174372498EA4700B95CAB /* View */,
 				58C174362498EA3C00B95CAB /* Model */,
-				58C174352498EA0F00B95CAB /* ViewModel */,
 			);
 			path = DetailedInfoModule;
 			sourceTree = "<group>";
@@ -173,6 +188,7 @@
 		58C174352498EA0F00B95CAB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5834CFF7249A092A0028A194 /* DetailedInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +196,7 @@
 		58C174362498EA3C00B95CAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5834CFF9249A19770028A194 /* ViewData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -355,9 +372,12 @@
 			files = (
 				5898DB8F2421131D00E28F97 /* DetailedInfoView.swift in Sources */,
 				585C3CA2242220EF00BF7F60 /* JSONAOPModel.swift in Sources */,
+				5834CFF6249A00C80028A194 /* AppCoordinator.swift in Sources */,
 				5898DB8C242112F100E28F97 /* DetailedInfoViewController.swift in Sources */,
+				5834CFFA249A19770028A194 /* ViewData.swift in Sources */,
 				5803FFF8241BC403001262E9 /* RootView.swift in Sources */,
 				58706AE5241B814000371251 /* AppDelegate.swift in Sources */,
+				5834CFF8249A092A0028A194 /* DetailedInfoViewModel.swift in Sources */,
 				58706AFE241B826100371251 /* MapView.swift in Sources */,
 				58706AFB241B823E00371251 /* MapViewController.swift in Sources */,
 				585C3C9E2422198400BF7F60 /* JsonParser.swift in Sources */,

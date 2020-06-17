@@ -13,16 +13,20 @@ import GoogleMaps
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private var appCoordinator: AppCoordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         GMSServices.provideAPIKey("AIzaSyAVUXSoO8NDEI3F5pH_LNV-AlipTcks1Rg")
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let viewModel = MapViewModel()
-        window.rootViewController = UINavigationController(rootViewController: MapViewController(viewModel: viewModel))
+        let navigationController = UINavigationController()
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
+        
+        self.appCoordinator = AppCoordinator(navigationController)
+        self.appCoordinator?.start()
         
         return true
     }

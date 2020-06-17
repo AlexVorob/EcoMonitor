@@ -15,13 +15,13 @@ class DetailedInfoViewController: UIViewController, RootViewRepresentable {
     // MARK: -
     // MARK: - Properties
     
-    private let aopModel: AOPModel
-
+    private var viewModel: DetailedInfoViewModelType
+    
     // MARK: -
     // MARK: - Init and deinit
 
-    init(model: AOPModel) {
-        self.aopModel = model
+    init(viewModel: DetailedInfoViewModelType) {
+        self.viewModel = viewModel
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -33,13 +33,20 @@ class DetailedInfoViewController: UIViewController, RootViewRepresentable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.rootView?.fill(with: self.aopModel)
+        self.updateView()
+    }
+    
+    private func updateView() {
+        print("X updateView")
+        self.viewModel.updateView = { [weak self] viewData in
+            self?.rootView?.viewData = viewData
+        }
     }
     
     // MARK: -
     // MARK: - @IBActions
 
     @IBAction func closeButttonTapped(_ sender: UIButton) {
-        self.dismiss(animated: true)
+        self.viewModel.close()
     }
 }
