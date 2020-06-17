@@ -13,12 +13,12 @@ class DetailedInfoViewController: UIViewController, RootViewRepresentable {
     typealias RootView = DetailedInfoView
 
     // MARK: -
-    // MARK: - Properties
+    // MARK: Properties
     
     private var viewModel: DetailedInfoViewModelType
     
     // MARK: -
-    // MARK: - Init and deinit
+    // MARK: Init and deinit
 
     init(viewModel: DetailedInfoViewModelType) {
         self.viewModel = viewModel
@@ -29,6 +29,9 @@ class DetailedInfoViewController: UIViewController, RootViewRepresentable {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: -
+    // MARK: View Life Cylce
     
     override func viewDidLoad() {
         super.viewDidLoad()

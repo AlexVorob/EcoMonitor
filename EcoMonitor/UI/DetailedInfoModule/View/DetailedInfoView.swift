@@ -10,6 +10,9 @@ import UIKit
 
 class DetailedInfoView: UIView {
 
+    // MARK: -
+    // MARK: IBOutlet
+
     @IBOutlet var addressLabel: UILabel?
     @IBOutlet var NO2Label: UILabel?
     @IBOutlet var NOLabel: UILabel?
@@ -25,6 +28,10 @@ class DetailedInfoView: UIView {
           }
       }
     
+    // MARK: -
+    // MARK: View lifecycle
+
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -35,7 +42,10 @@ class DetailedInfoView: UIView {
             self.fill(with: viewData)
         }
     }
-        
+    
+    // MARK: -
+    // MARK: Private
+
     private func fill(with model: AOPModel) {
         self.addressLabel?.text = model.adress
         self.NO2Label?.text = model.NO2.description

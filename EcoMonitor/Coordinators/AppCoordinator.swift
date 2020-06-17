@@ -21,6 +21,9 @@ class AppCoordinator {
     init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
+    
+    // MARK: -
+    // MARK: Public
 
     public func start() {
         let event: MapViewModelEventHandler = { [weak self] event in

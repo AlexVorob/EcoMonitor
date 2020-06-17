@@ -41,9 +41,15 @@ class DetailedInfoViewModel: DetailedInfoViewModelType {
         self.startUpdateView()
     }
     
-    func close() {
+    // MARK: -
+    // MARK: Public
+    
+    public func close() {
         self.eventHandler?(.close)
     }
+    
+    // MARK: -
+    // MARK: Private
     
     private func startUpdateView() {
         DispatchQueue.main.async {

@@ -162,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				5898DB912421149600E28F97 /* AOPModel.swift */,
-				5898DB93242114A400E28F97 /* AOPModels.swift */,
 				585C3CA1242220EF00BF7F60 /* JSONAOPModel.swift */,
 			);
 			path = Models;
@@ -232,6 +231,7 @@
 		58C1743C2498FBD300B95CAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5898DB93242114A400E28F97 /* AOPModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

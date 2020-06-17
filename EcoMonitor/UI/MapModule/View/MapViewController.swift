@@ -25,7 +25,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     var viewModel: MapViewModelType
     
     // MARK: -
-    // MARK: - Initializations
+    // MARK: Initializations
 
     init(viewModel: MapViewModel) {
         self.viewModel = viewModel
@@ -38,7 +38,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     }
     
     // MARK: -
-    // MARK: - UIViewController
+    // MARK: View Life Cylce
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     }
     
     // MARK: -
-    // MARK: - Private
+    // MARK: Private
 
     private func drawMarkers() {
         self.viewModel.fetchData {
@@ -82,7 +82,7 @@ class MapViewController: UIViewController, RootViewRepresentable, GMSMapViewDele
     }
     
     // MARK: -
-    // MARK: - <GMSMapViewDelegate>
+    // MARK: <GMSMapViewDelegate>
 
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         if let aopMarker = marker as? MapAOPMarker {
