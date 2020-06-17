@@ -29,8 +29,8 @@
                                 <action selector="closeButttonTapped:" destination="-1" eventType="touchUpInside" id="S8L-Wb-fcG"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s04-MG-PHW" userLabel="addressLabel">
-                            <rect key="frame" x="174" y="10" width="66" height="20.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s04-MG-PHW" userLabel="addressLabel">
+                            <rect key="frame" x="40" y="10" width="334" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -41,6 +41,7 @@
                         <constraint firstAttribute="height" constant="40" id="Fuj-rW-2Uw"/>
                         <constraint firstItem="s04-MG-PHW" firstAttribute="centerY" secondItem="b9c-th-yxS" secondAttribute="centerY" id="Irl-vU-jdp"/>
                         <constraint firstItem="TKM-5L-1f4" firstAttribute="leading" secondItem="b9c-th-yxS" secondAttribute="leading" constant="20" id="Ygz-Gb-wXZ"/>
+                        <constraint firstItem="s04-MG-PHW" firstAttribute="leading" secondItem="TKM-5L-1f4" secondAttribute="leading" constant="20" id="aUb-8B-eKK"/>
                         <constraint firstItem="TKM-5L-1f4" firstAttribute="centerY" secondItem="b9c-th-yxS" secondAttribute="centerY" id="cKG-5F-Xrl"/>
                         <constraint firstItem="s04-MG-PHW" firstAttribute="centerX" secondItem="b9c-th-yxS" secondAttribute="centerX" id="mg9-eW-cZm"/>
                     </constraints>

@@ -36,8 +36,10 @@ class DetailedInfoViewController: UIViewController, RootViewRepresentable {
         self.updateView()
     }
     
+    // MARK: -
+    // MARK: Private
+    
     private func updateView() {
-        print("X updateView")
         self.viewModel.updateView = { [weak self] viewData in
             self?.rootView?.viewData = viewData
         }

@@ -28,7 +28,6 @@ class DetailedInfoView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        print("X viewData -> ", viewData)
         switch viewData {
         case .default:
             break
@@ -37,7 +36,7 @@ class DetailedInfoView: UIView {
         }
     }
         
-    func fill(with model: AOPModel) {
+    private func fill(with model: AOPModel) {
         self.addressLabel?.text = model.adress
         self.NO2Label?.text = model.NO2.description
         self.NOLabel?.text = model.NO.description

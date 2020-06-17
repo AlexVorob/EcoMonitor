@@ -37,11 +37,17 @@ class DetailedInfoViewModel: DetailedInfoViewModelType {
         self.eventHandler = eventHandler
         self.aopModel = aopModel
       
-        print("X  .model")
-        self.updateView?(.model(aopModel))
+        self.updateView?(.default)
+        self.startUpdateView()
     }
     
     func close() {
         self.eventHandler?(.close)
+    }
+    
+    private func startUpdateView() {
+        DispatchQueue.main.async {
+            self.updateView?(.model(self.aopModel))
+        }
     }
 }
